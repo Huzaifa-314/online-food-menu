@@ -1,0 +1,288 @@
+:root{
+    --dark-blue: #141E27;
+    --white-cyan: #F4F9F9;
+    --blue-gray: #637A9F;
+    --text: #2d2d2d;
+
+}
+*{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    background-color: var(--white-cyan);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+button {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    color: var(--white-cyan);
+    background-color:var(--blue-gray);
+    border: 2px solid black;
+  }
+  
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark-blue);
+    padding:20px;
+    color:var(--white-cyan)
+}
+.logo{
+    font-size:40px;
+    font-weight: bold;
+}
+footer {
+    background-color: var(--dark-blue);
+    color: var(--white-cyan);
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.social-links a {
+    color: var(--white-cyan);
+    font-size: 20px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+    border-top: 1px solid var(--white-cyan);
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.food_menu{
+    padding:40px 300px;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 -0.5rem 1rem rgba(0 0 0 / 0.15);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+.item_card{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 -0.5rem 1rem rgba(0 0 0 / 0.15);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.cat_image{
+    margin-right: 20px;
+}
+.cat_image img{
+    width: 100px;
+    height: 100px; /* Adjust the height as desired */
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.title{
+    font-size: 25px;
+    font-weight: bold;
+    color:var(--dark-blue);
+}
+.cat_description{
+    font-size: 17px;
+    color:var(--text)
+}
+
+.item_image {
+    width: 80px;
+    height: 80px; /* Adjust the height as desired */
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin-right: 20px;
+}
+.item_name_for_recipe{
+    font-size: 60px;
+    margin-left: -50px;
+    font-weight: bold;
+}
+
+.container{
+    max-width: 960px;
+    margin:20px auto;
+}
+.recipe_item{
+    margin-bottom: 50px;
+}
+
+.recipe_title{
+    font-size: 50px;
+    margin-left: -20px;
+    margin-bottom: 20px;
+}
+.recipe_description{
+    margin-left: 20px;
+    font-size: 20px;
+}
+.recipe_image img{
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+/* Custom CSS for login page */
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--white-cyan); /* Use root CSS color variable */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-container form {
+    text-align: center;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--blue-gray); /* Use root CSS color variable */
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.login-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--blue-gray); /* Use root CSS color variable */
+    color: var(--white-cyan); /* Use root CSS color variable */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-container input[type="submit"]:hover {
+    background-color: var(--dark-blue);
+}
+
+.login-container .error {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Custom CSS for add recipe form */
+.add-recipe-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--white-cyan); /* Use root CSS color variable */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.add-recipe-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.add-recipe-form select,
+.add-recipe-form input[type="text"],
+.add-recipe-form input[type="file"],
+.add-recipe-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--blue-gray); /* Use root CSS color variable */
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.add-recipe-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--blue-gray); /* Use root CSS color variable */
+    color: var(--white-cyan); /* Use root CSS color variable */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-recipe-form input[type="submit"]:hover {
+    background-color: var(--dark-blue);
+}
+
+.add-recipe-form .error {
+    color: red;
+    margin-top: 10px;
+}
