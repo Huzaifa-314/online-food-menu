@@ -19,7 +19,8 @@ if (!$conn) {
 // Check if the user is already logged in, redirect to homepage if true
 if (isset($_SESSION['user_id'])) {
     $_SESSION['loggedin'] = true;
-    header("Location: index.php");
+    $previous_page = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : 'index.php';
+    header("Location: $previous_page");
     exit();
 }
 

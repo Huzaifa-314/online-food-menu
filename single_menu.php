@@ -28,7 +28,7 @@ if (!$conn) {
 
     <section class="food_menu">
         <div class="menu_container">
-            <div class="menu">
+            <div class="menu_items">
                 <?php
                 // Check if menu category ID is provided in the URL
                 if (isset($_GET['menu'])) {
