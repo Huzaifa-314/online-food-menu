@@ -6,6 +6,12 @@ session_start();
 <header>
     <a href="index.php"><div class="logo">Food Menu</div></a>
     <section style="display: flex;">
+        <div class="menu">
+            <form action="search.php" method="GET">
+                <input type="text" name="query" placeholder="Search...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
         <?php
         // Check if the user is logged in
         if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {

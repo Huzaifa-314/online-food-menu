@@ -286,3 +286,27 @@ footer {
     color: red;
     margin-top: 10px;
 }
+.menu{
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+
+.menu input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc; /* Adjust as needed */
+    border-radius: 4px;
+}
+
+.menu button[type="submit"] {
+    background-color: #637A9F; /* Adjust as needed */
+    color: #F4F9F9; /* Adjust as needed */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.menu button[type="submit"]:hover {
+    background-color: #455769; /* Adjust as needed */
+}
